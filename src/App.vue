@@ -1,32 +1,35 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<div id="app" class="app">
+    <app-header></app-header>
+    <div class="app__body">
+        <app-sidebar></app-sidebar>
+        <app-feed></app-feed>
     </div>
-    <router-view/>
-  </div>
+</div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+export default {
+    name: 'App',
+
+    components: {
+        'appHeader': () => import( /* webpackChunkName: "SiteNavigation" */ './components/SiteNavigation'),
+        'appSidebar': () => import( /* webpackChunkName: "Sidebar" */ './components/Sidebar'),
+        'appFeed': () => import( /* webpackChunkName: "Feed" */ './components/Feed'),
+    },
+
+    data: () => ({
+        //
+    }),
+};
+</script>
+
+<style lang="scss" scoped>
+.app{
+  background-color: #f1f2f5;
+  height: 100vh;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.app__body {
+    display: flex;
 }
 </style>

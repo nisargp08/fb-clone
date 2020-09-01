@@ -1,0 +1,9 @@
+// Overwriting vuetify's css
+*{
+    font-family: $primary-family;
+}
+input{
+    background-color: white;
+    border-style : inset;
+    border-radius: 0.25rem;
+}
