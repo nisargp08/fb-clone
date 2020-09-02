@@ -40,7 +40,7 @@ export default {
                     image: 'https://images.unsplash.com/photo-1598771651394-28234afc5f52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
                     profileSrc: 'https://randomuser.me/api/portraits/women/63.jpg',
                     title: ' Britney Cooper',
-                }
+                },
             ]
         }
     },

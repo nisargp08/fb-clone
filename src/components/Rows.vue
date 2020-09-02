@@ -22,4 +22,26 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.row-component{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover{
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+    
+    .title{
+        margin-left: 20px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .v-icon{
+        font-size : xx-large;
+        color: #2e81f4;
+    }
+}
+</style>

@@ -1,7 +1,10 @@
 // Overwriting vuetify's css
 *{
-    font-family: $primary-family;
+    font-family: $secondary-family;
 }
+:root {
+    --animate-duration: 0.2s;
+  }
 input{
     background-color: white;
     border-style : inset;
